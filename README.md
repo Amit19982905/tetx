@@ -1,0 +1,2 @@
+# tetx
+text animation
