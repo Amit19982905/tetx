@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+
+    width: 350px;
+    height: 250px;
+    margin: 40px auto;
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#main1 {
+
+    color: white;
+    background-color: rgb(108, 232, 108);
+    animation: text-change1 6s linear infinite;
+    position: absolute;
+    visibility: hidden;
+    margin: auto;
+
+}
+
+#main2 {
+
+    position: absolute;
+    color: white;
+    background-color: rgb(108, 129, 232);
+    animation: text-change2 6s linear infinite;
+    visibility: hidden;
+    
+
+    left: 56px;
+}
+
+#main3 {
+
+    position: absolute;
+    color: white;
+    background-color: rgb(205, 29, 29);
+    animation: text-change3 6s linear infinite;
+
+    visibility: hidden;
+    right: 35px;
+}
+
+#anime {
+    position: relative;
+    top: -32px;
+    right: -29px;
+}
+
+@keyframes text-change1 {
+    0% {
+        visibility: visible;
+        z-index: 1;
+    }
+    10%{
+        visibility: hidden;
+        z-index: -1;
+    }
+    /* 100%{
+        visibility: ;
+        z-index: -1;
+        /* z-index: -1; 
+    } */
+   
+
+    100% {
+        visibility: visible;
+        z-index: 1;
+    }
+
+}
+
+@keyframes text-change2 {
+    0% {
+        visibility: hidden;
+        z-index: -2;
+    }
+    25% {
+        visibility: visible;
+        z-index: 2;
+    }
+    /* 50%{
+        visibility: visible;
+        z-index: 1;
+    } */
+    35%{
+        visibility: hidden;
+        z-index: -2;
+    } 
+ 
+    100% {
+        visibility: hidden;
+        z-index: -2;
+    } 
+
+}
+
+@keyframes text-change3 {
+    0% {
+        visibility: hidden;
+        z-index: -3;
+    }
+    70% {
+        visibility: visible;
+        z-index: 3;
+    }
+    /* 70%{
+        visibility: visible;
+        z-index: 6;
+    } */
+    80%{
+        visibility: hidden;
+        z-index: -3;
+
+    }
+    100%{
+        visibility: hidden;
+        z-index: -3;
+
+    }
+}
